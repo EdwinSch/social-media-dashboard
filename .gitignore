@@ -1,0 +1,15 @@
+# Global ignore
+*.sketch
+*.fig
+*.xd
+
+# Folders
+design/
+node_modules/
+
+# Specific
+/style-guide.md
+.DS_Store
+.prettierignore
+
+

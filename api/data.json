@@ -1,0 +1,46 @@
+[
+  {
+    "id": "facebook",
+    "handle": "@nathanf",
+    "logo": "../img/icon-facebook.svg",
+    "followers": 1987,
+    "followersGrowth": 12,
+    "views": 87,
+    "pageGrowth": 3,
+    "likes": 52,
+    "likesGrowth": -2
+  },
+  {
+    "id": "twitter",
+    "handle": "@nathanf",
+    "logo": "../img/icon-twitter.svg",
+    "followers": 1044,
+    "followersGrowth": 99,
+    "views": 117,
+    "pageGrowth": 303,
+    "likes": 507,
+    "likesGrowth": 553
+  },
+  {
+    "id": "instagram",
+    "handle": "@realnathanf",
+    "logo": "../img/icon-instagram.svg",
+    "followers": 11000,
+    "followersGrowth": 1099,
+    "views": 52000,
+    "pageGrowth": 1375,
+    "likes": 5462,
+    "likesGrowth": 2257
+  },
+  {
+    "id": "youtube",
+    "handle": "Nathan F.",
+    "logo": "../img/icon-youtube.svg",
+    "followers": 8239,
+    "followersGrowth": -144,
+    "views": 1407,
+    "pageGrowth": -12,
+    "likes": 107,
+    "likesGrowth": -19
+  }
+]
