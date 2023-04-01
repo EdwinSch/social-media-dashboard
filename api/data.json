@@ -27,7 +27,7 @@
     "id": "instagram",
     "handle": "@realnathanf",
     "logo": "../img/icon-instagram.svg",
-    "borderColor": "hsl(37, 97%, 70%) to hsl(329, 70%, 58%)",
+    "borderColor": "linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))",
     "followers": "11K",
     "followersGrowth": 1099,
     "views": 52000,
