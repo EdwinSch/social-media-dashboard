@@ -13,10 +13,10 @@
   --text: 21242d;
   --greyText: hsl(228, 12%, 44%);
   --numbers: hsl(230, 17%, 14%);
-  --borderYT: hsl(348, 97%, 39%);
+  /* --borderYT: hsl(348, 97%, 39%);
   --borderIG: hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
   --borderTW: hsl(203, 89%, 53%);
-  --borderFB: hsl(208, 92%, 53%);
+  --borderFB: hsl(208, 92%, 53%); */
   --toggle: hsl(230, 22%, 74%);
   --limeGreen: hsl(163, 72%, 41%);
   --brightRed: hsl(356, 69%, 56%);
@@ -54,7 +54,6 @@ main {
 .negative {
   color: var(--brightRed);
 }
-
 /* --- HEADER --- */
 header {
   display: flex;
@@ -87,6 +86,7 @@ h1 {
   gap: 25px;
   flex-wrap: wrap; */
 }
+
 .main-card {
   min-width: 255px;
   height: 215px;
@@ -97,8 +97,8 @@ h1 {
   align-items: center;
   justify-content: space-between;
   background-color: var(--cardBg);
-  border-top: 3px solid var(--borderFB);
 }
+
 .main-card-header {
   display: flex;
   align-items: center;
