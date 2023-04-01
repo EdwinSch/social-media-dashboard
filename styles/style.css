@@ -1,0 +1,140 @@
+/* --- RESET --- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* --- ROOT VARIABLES --- */
+:root {
+  --background: #fff;
+  --backgroundTop: hsl(225, 100%, 98%);
+  --cardBg: hsl(227, 47%, 96%);
+  --text: 21242d;
+  --greyText: hsl(228, 12%, 44%);
+  --numbers: hsl(230, 17%, 14%);
+  --borderYT: hsl(348, 97%, 39%);
+  --borderIG: hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --borderTW: hsl(203, 89%, 53%);
+  --borderFB: hsl(208, 92%, 53%);
+  --toggle: hsl(230, 22%, 74%);
+  --limeGreen: hsl(163, 72%, 41%);
+  --brightRed: hsl(356, 69%, 56%);
+
+  --inspect: solid red 1px;
+  --transition: 0.3s ease;
+}
+
+/* --- MAIN --- */
+body {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+}
+.background-top {
+  position: absolute;
+  z-index: -1;
+  background-color: var(--backgroundTop);
+  width: 100vw;
+  height: 250px;
+}
+main {
+  padding-top: 40px;
+  margin: 0 auto;
+  max-width: 1111px;
+}
+.flex-wrapper {
+  display: flex;
+}
+.positive {
+  color: var(--limeGreen);
+}
+.negative {
+  color: var(--brightRed);
+}
+
+/* --- HEADER --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+h1 {
+  font-size: 28px;
+  text-transform: capitalize;
+  color: var(--text);
+}
+.grand-total {
+  text-transform: capitalize;
+  color: var(--greyText);
+  font-size: 14px;
+  font-weight: 600;
+}
+.toggle-label {
+  color: #aeb2cb;
+}
+
+/* --- MAIN CARDS --- */
+.main-cards-container {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  /* display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap; */
+}
+.main-card {
+  min-width: 255px;
+  height: 215px;
+  padding: 25px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--cardBg);
+  border-top: 3px solid var(--borderFB);
+}
+.main-card-header {
+  display: flex;
+  align-items: center;
+}
+.main-card-header img {
+  margin-right: 5px;
+}
+.handle {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--greyText);
+}
+.main-card .wrapper {
+  text-align: center;
+}
+h2 {
+  font-size: 52px;
+}
+.followers-title {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 300;
+  font-size: 12px;
+  color: var(--greyText);
+}
+.stats {
+  align-items: center;
+}
+.stat {
+  margin-left: 5px;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* --- MOBILE RESPONSIVE --- */
+@media screen and (max-width: 450px) {
+  /* some class */
+}
