@@ -26,7 +26,7 @@ function mapMainCards(data) {
         card;
       console.log(borderColor);
       // return
-      return `<article class="main-card" style="border-top: 3px solid ${borderColor}" data-id=${id}>
+      return `<article class="main-card" style="border-top: solid 3px ${borderColor}" data-id=${id}>
       <div class="main-card-header">
         <img src="${logo}" alt="${id} icon" />
         <p class="handle">${handle}</p>
