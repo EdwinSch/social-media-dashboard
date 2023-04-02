@@ -24,7 +24,15 @@ function mapMainCards(data) {
       // destructure
       const { id, logo, borderColor, handle, followers, followersGrowth } =
         card;
-      console.log(borderColor);
+      // check growth value & assign icon + color
+      let statColor = "positive";
+      let statIcon = "./img/icon-up.svg";
+      if (followersGrowth < 0) {
+        statColor = "negative";
+        statIcon = "./img/icon-down.svg";
+      }
+      // convert Negative numbers for DOM display
+      const statConversion = Math.abs(followersGrowth);
       // return
       return `<article class="main-card" style="border-top: solid 3px ${borderColor}" data-id=${id}>
       <div class="main-card-header">
@@ -36,8 +44,8 @@ function mapMainCards(data) {
         <p class="followers-title">followers</p>
       </div>
       <div class="flex-wrapper stats">
-        <img src="./img/icon-up.svg" alt="up icon" />
-        <p class="stat">${followersGrowth} today</p>
+        <img src="${statIcon}" alt="up icon" />
+        <p class="stat ${statColor}">${statConversion} today</p>
       </div>
     </article>`;
     })

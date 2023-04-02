@@ -10,6 +10,7 @@
   --background: #fff;
   --backgroundTop: hsl(225, 100%, 98%);
   --cardBg: hsl(227, 47%, 96%);
+  --cardHover: #e1e3f0;
   --text: #21242d;
   --greyText: hsl(228, 12%, 44%);
   --numbers: hsl(230, 17%, 14%);
@@ -97,6 +98,11 @@ h1 {
   align-items: center;
   justify-content: space-between;
   background-color: var(--cardBg);
+  transition: var(--transition);
+  cursor: pointer;
+}
+.main-card:hover {
+  background-color: var(--cardHover);
 }
 
 .main-card-header {
