@@ -7,6 +7,8 @@ import getElement from "./modules/getElement.js";
 const grandTotal = getElement(".grand-total");
 const mainCardContainer = getElement(".main-cards-container");
 const subCardsContainer = getElement(".sub-cards-container");
+const toggleSwitch = getElement(".toggle-switch");
+
 const url = "./api/data.json";
 
 // Fetch API
@@ -138,3 +140,7 @@ function mapSubCards(data) {
   //display output
   subCardsContainer.innerHTML = mergeSubMaps;
 }
+
+toggleSwitch.addEventListener("click", () => {
+  document.documentElement.classList.toggle("dark-theme");
+});
