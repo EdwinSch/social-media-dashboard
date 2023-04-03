@@ -29,7 +29,6 @@
   --text: #fff;
   --greyText: hsl(228, 34%, 66%);
   --numbers: #fff;
-  --toggle: hsl(230, 22%, 74%);
 }
 
 /* --- MAIN --- */
@@ -48,9 +47,9 @@ body {
   height: 250px;
 }
 main {
-  padding-top: 40px;
+  padding: 40px 25px 0 25px;
   margin: 0 auto;
-  max-width: 1111px;
+  max-width: 1160px;
 }
 .flex-wrapper {
   display: flex;
@@ -95,10 +94,6 @@ h1 {
   display: grid;
   gap: 25px;
   grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-  /* display: flex;
-  justify-content: space-between;
-  gap: 25px;
-  flex-wrap: wrap; */
 }
 
 .main-card {
@@ -196,6 +191,40 @@ h5 {
 }
 
 /* --- MOBILE RESPONSIVE --- */
-@media screen and (max-width: 450px) {
-  /* some class */
+@media screen and (max-width: 550px) {
+  main {
+    padding: 30px 25px 30px 25px;
+  }
+  header {
+    align-items: start;
+    flex-direction: column;
+  }
+  .title-wrapper {
+    margin-bottom: 20px;
+    line-height: 26px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  main {
+    padding: 20px 10px 20px 10px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .main-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .main-card {
+    min-width: 100%;
+  }
+  .sub-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .sub-card {
+    min-width: 100%;
+  }
 }
