@@ -5,7 +5,7 @@
 
 .toggle-switch {
   display: inline-block;
-  background: #aeb2cb;
+  background: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
   border-radius: 16px;
   width: 48px;
   height: 26px;
@@ -31,15 +31,20 @@
 .toggle:hover .toggle-switch:before {
   background: linear-gradient(to bottom, #fff 0%, #fff 100%);
 }
-.toggle-checkbox:checked + .toggle-switch {
+/* .toggle-checkbox:checked + .toggle-switch {
   background-image: linear-gradient(
     90deg,
     hsl(210, 78%, 56%),
     hsl(146, 68%, 55%)
   );
-}
+} */
 .toggle-checkbox:checked + .toggle-switch:before {
   left: 24px;
+  background: linear-gradient(
+    to bottom,
+    hsl(232, 19%, 15%),
+    hsl(230, 17%, 14%)
+  );
 }
 
 .toggle-checkbox {
