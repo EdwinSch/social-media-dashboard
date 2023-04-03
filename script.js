@@ -4,7 +4,7 @@ import getElement from "./modules/getElement.js";
 
 /* ---- SCRIPT ---- */
 
-const grandTotal = getElement(".grand-total");
+const grandTotal = getElement(".grand-total"); // to do
 const mainCardContainer = getElement(".main-cards-container");
 const subCardsContainer = getElement(".sub-cards-container");
 const toggleSwitch = getElement(".toggle-switch");

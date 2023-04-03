@@ -14,3 +14,4 @@ This dashboard keeps track of socialmedia stats through (a mocked) API. 100% van
 ## Author
 
 Made by Front-Ed / 2023
+Design by frontendmentor.io
